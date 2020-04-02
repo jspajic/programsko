@@ -2,5 +2,5 @@ test.py
 .idea
 venv
 README.md
-**/Main.py
 **/__pycache__/
+vjezbe2.py
