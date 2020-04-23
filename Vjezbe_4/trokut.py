@@ -9,7 +9,11 @@ class Trokut(object):
                 raise ValueError("Nije trokut!")
 
     def __str__(self):
-        return 'trokut' + " " + str(self.__stranice[0]) + " " + str(self.__stranice[1]) + " " + str(self.__stranice[2])
+        string = "trokut "
+        for stranica in self.__stranice:
+            string += " " + str(stranica)
+
+        return str(string)
 
     def __repr__(self):
         return "Trokut" + repr(self.__stranice)
@@ -23,7 +27,6 @@ class Trokut(object):
 
     def povrsina(self):
         s = self.opseg() / 2
-
         return sqrt((s - self.__stranice[0]) * (s - self.__stranice[1]) * (s - self.__stranice[2]))
 
 
