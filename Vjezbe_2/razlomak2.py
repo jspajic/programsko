@@ -1,5 +1,4 @@
 class Razlomak():
-    '''Klasa razlomak'''
 
     def __init__(self, brojnik, nazivnik=1):
         if nazivnik == 0: raise Exception('Nazivnik ne moze biti 0')
